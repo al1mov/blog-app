@@ -1,5 +1,5 @@
 <script setup>
-const url = process.env.URL;
+const url = "https://blog-api-oab6.onrender.com/posts/";
 
 const { data: posts } = await useFetch(url);
 
