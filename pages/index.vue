@@ -8,11 +8,12 @@ useSeoMeta({
   description: "Blog site using nuxt.js 3",
   ogDescription: "Blog site using nuxt.js 3",
   ogImage:
-    "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,quality=75,width=960,height=480/event-covers/50/653c8dc8-2871-4cc0-b768-9b634df65b5a",
+    "https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1373&q=80",
   twitterCard: "summary_large_image",
 });
 </script>
 <template>
+  <NuxtLoadingIndicator />
   <Navbar class="h-[50px] sticky" />
   <Posts />
   <NuxtPage />
