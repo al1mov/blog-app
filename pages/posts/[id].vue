@@ -8,6 +8,15 @@ blog = post;
 console.log(post);
 </script>
 <template>
+  <Head>
+    <Title>{{ blog.title }}</Title>
+    <Meta name="description" content="Blog app with nuxt.js 3!" />
+    <Meta name="robots" content="INDEX, FOLLOW" />
+    <Meta name="og:title" :content="blog.title" />
+    <Meta name="og:image" :content="blog.image" />
+    <Meta name="og:type" content="website" />
+    <Meta name="twitter:image" :content="blog.image" />
+  </Head>
   <div class="w-full min-h-screen max-h-max bg-black pb-[30px]">
     <div
       class="w-[95%] flex justify-start text-white text-2xl items-center p-[20px] m-auto lg:w-[70%]"
