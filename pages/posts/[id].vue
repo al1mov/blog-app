@@ -10,7 +10,7 @@ console.log(post);
 <template>
   <Head>
     <Title>{{ blog.title }}</Title>
-    <Meta name="description" content="Blog app with nuxt.js 3!" />
+    <Meta name="description" :content="new String(blog.body).slice(0, 200)" />
     <Meta name="robots" content="INDEX, FOLLOW" />
     <Meta name="og:title" :content="blog.title" />
     <Meta name="og:image" :content="blog.image" />
